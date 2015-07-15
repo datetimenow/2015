@@ -1,14 +1,31 @@
 <html> 
   <head> 
-    <script src="jquery.js"></script> 
-    <script> 
+    <script src="react.js"></script> 
+    <script src="jquery.js"></script>
+    <h2>test</h2>
+    <script>
     $(function(){
       $("#includedContent").load("2015.html"); 
     });
+    </script>
     </script> 
   </head> 
 
   <body> 
      <div id="includedContent"></div>
-  </body> 
+  </body>
+   <html>
+    <title>Hello React!</title>
+    <script src="react/react.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text">
+      React.render(
+        <h1>Hello, world!</h1>,
+        document.getElementById('example')
+      );
+    </script>
+  </body>
+</html>
 </html>

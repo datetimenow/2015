@@ -4,12 +4,13 @@ var app = express();
 app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/bower_components'));
 
 // views is directory for all template files
 app.set('views', __dirname + '/views');
 
 app.get('/', function(request, response) {
-  response.render('public/index');
+  response.send('index');
 });
 
 app.listen(app.get('port'), function() {
